@@ -3,7 +3,7 @@
 #
 #
 
-FROM alpine:edge
+FROM  gliderlabs/alpine:edge
 
 MAINTAINER Gunnar Falk <docker@grundstil.de>
 # inspired by https://github.com/colstrom/docker-alpine 
@@ -18,7 +18,6 @@ RUN echo http://nl.alpinelinux.org/alpine/edge/main | tee /etc/apk/repositories 
 && echo @testing http://nl.alpinelinux.org/alpine/edge/testing | tee -a /etc/apk/repositories \
 && echo @community http://nl.alpinelinux.org/alpine/edge/community | tee -a /etc/apk/repositories \
 && apk add --update \
-apk-install \
 curl \
 wget \
 bash \
