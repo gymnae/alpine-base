@@ -6,11 +6,13 @@
 FROM alpine:edge
 
 MAINTAINER Gunnar Falk <docker@grundstil.de>
-# inspired by 
+# inspired by https://github.com/colstrom/docker-alpine 
 
+## Taken directly form https://github.com/colstrom/docker-alpine:
 # This includes the main, testing, and community repositories,
 # but all packages outside main are masked. 
 # To import them, just use apk add package@tag.
+##
 
 RUN echo http://nl.alpinelinux.org/alpine/edge/main | tee /etc/apk/repositories \
 && echo @testing http://nl.alpinelinux.org/alpine/edge/testing | tee -a /etc/apk/repositories \
