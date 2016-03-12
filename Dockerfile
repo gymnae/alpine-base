@@ -23,6 +23,8 @@ wget \
 bash \
 tree \
 sed \
+rsync \
+openssh \
 ca-certificates \
 && rm -rf /var/cache/apk/*
 
