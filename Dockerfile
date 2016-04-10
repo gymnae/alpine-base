@@ -25,6 +25,8 @@ tree \
 sed \
 rsync \
 openssh \
+vim \
+nano \
 ca-certificates \
 && rm -rf /var/cache/apk/*
 
