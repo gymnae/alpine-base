@@ -28,5 +28,6 @@ openssh \
 vim \
 nano \
 ca-certificates \
+sudo \
 && rm -rf /var/cache/apk/*
 
