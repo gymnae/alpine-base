@@ -29,5 +29,6 @@ vim \
 nano \
 ca-certificates \
 sudo \
+screen \
 && rm -rf /var/cache/apk/*
 
