@@ -30,5 +30,6 @@ nano \
 ca-certificates \
 sudo \
 screen \
+busybox-suid \
 && rm -rf /var/cache/apk/*
 
