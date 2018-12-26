@@ -17,7 +17,7 @@ MAINTAINER Gunnar Falk <docker@grundstil.de>
 RUN echo http://nl.alpinelinux.org/alpine/edge/main | tee /etc/apk/repositories \
 && echo @testing http://nl.alpinelinux.org/alpine/edge/testing | tee -a /etc/apk/repositories \
 && echo @community http://nl.alpinelinux.org/alpine/edge/community | tee -a /etc/apk/repositories \
-&& apk add --update \
+&& apk add --no-cache \
 curl \
 wget \
 bash \
@@ -30,6 +30,5 @@ nano \
 ca-certificates \
 sudo \
 screen \
-busybox-suid \
-&& rm -rf /var/cache/apk/*
+busybox-suid
 
