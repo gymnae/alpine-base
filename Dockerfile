@@ -17,7 +17,8 @@ MAINTAINER Gunnar Falk <docker@grundstil.de>
 RUN echo http://nl.alpinelinux.org/alpine/edge/main | tee /etc/apk/repositories \
 && echo @testing http://nl.alpinelinux.org/alpine/edge/testing | tee -a /etc/apk/repositories \
 && echo @community http://nl.alpinelinux.org/alpine/edge/community | tee -a /etc/apk/repositories \
-&& apk add --no-cache \
+&& echo http://dl-cdn.alpinelinux.org/alpine/edge/community | tee -a /etc/apk/repositories \
+&& apk --no-cache add \
 curl \
 wget \
 bash \
