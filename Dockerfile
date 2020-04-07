@@ -31,5 +31,6 @@ nano \
 ca-certificates \
 sudo \
 screen \
-busybox-suid
+busybox-suid \
+build-base 
 
