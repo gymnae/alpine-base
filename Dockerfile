@@ -14,10 +14,10 @@ MAINTAINER Gunnar Falk <docker@grundstil.de>
 # To import them, just use apk add package@tag.
 ##
 
-RUN echo http://nl.alpinelinux.org/alpine/edge/main | tee /etc/apk/repositories \
-&& echo @testing http://nl.alpinelinux.org/alpine/edge/testing | tee -a /etc/apk/repositories \
-&& echo @community http://nl.alpinelinux.org/alpine/edge/community | tee -a /etc/apk/repositories \
-&& echo http://dl-cdn.alpinelinux.org/alpine/edge/community | tee -a /etc/apk/repositories \
+RUN echo http://dl-cdn.alpinelinux.org/alpine/latest-stable/main | tee /etc/apk/repositories \
+&& echo @testing http://dl-cdn.alpinelinux.org/alpine/latest-stable/testing | tee -a /etc/apk/repositories \
+&& echo @community http://dl-cdn.alpinelinux.org/alpine/latest-stable/community | tee -a /etc/apk/repositories \
+&& echo http://dl-cdn.alpinelinux.org/alpine/latest-stable/community | tee -a /etc/apk/repositories \
 && apk --no-cache add \
 curl \
 wget \
