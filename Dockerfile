@@ -15,7 +15,7 @@ MAINTAINER Gunnar Falk <docker@grundstil.de>
 ##
 
 RUN echo http://dl-cdn.alpinelinux.org/alpine/latest-stable/main | tee /etc/apk/repositories \
-  && echo http://dl-cdn.alpinelinux.org/alpine/latest-stable/community | tee -a /etc/apk/repositories \
+  && echo http://dl-cdn.alpinelinux.org/alpine/latest-stable/community | tee -a /etc/apk/repositories
   
 RUN apk --no-cache add \
 curl \
