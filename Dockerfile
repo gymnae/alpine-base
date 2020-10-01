@@ -3,7 +3,7 @@
 #
 #
 
-FROM  gliderlabs/alpine:edge
+FROM  alpine:latest
 
 MAINTAINER Gunnar Falk <docker@grundstil.de>
 # inspired by https://github.com/colstrom/docker-alpine 
