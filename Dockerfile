@@ -14,8 +14,8 @@ MAINTAINER Gunnar Falk <docker@grundstil.de>
 # To import them, just use apk add package@tag.
 ##
 
-RUN echo https://dl-cdn.alpinelinux.org/alpine/latest-stable/main | tee /etc/apk/repositories \
-  && echo https://dl-cdn.alpinelinux.org/alpine/latest-stable/community | tee -a /etc/apk/repositories
+RUN echo http://dl-cdn.alpinelinux.org/alpine/latest-stable/main | tee /etc/apk/repositories \
+  && echo http://dl-cdn.alpinelinux.org/alpine/latest-stable/community | tee -a /etc/apk/repositories
   
 RUN apk --no-cache add \
 curl \
